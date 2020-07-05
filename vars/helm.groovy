@@ -7,7 +7,7 @@ def upgrade(Map config) {
     throw new Exception("The required parameter 'name' was not set.")
   }
   
-  config.bin = config.bin == null ? 'helm3' : config.bin
+  config.bin = config.bin == null ? 'helm' : config.bin
   
   // upgrade the helm
   try {
