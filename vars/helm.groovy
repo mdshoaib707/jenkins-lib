@@ -56,9 +56,6 @@ def upgrade(Map config) {
     if (config.recreatePods == true) {
       cmd += " --recreate-pods"
     }
-    if (config.force == true) {
-      cmd += " --force"
-    }
     if (config.timeout) {
       cmd += " --timeout ${config.timeout}"
     }
